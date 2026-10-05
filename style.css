@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:rgb(255, 250, 244);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: antiquewhite;
+}
+
+.nav-links ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: #40200C;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.nav-icons{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+    padding: 10px;
+}
+
+.cart{
+    position: relative;
+}
+
+.cart span{
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 4px;
+    border-radius: 100px;
+    position: absolute;
+    right: 0px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.new{
+    color:rgb(204, 153, 95);
+    margin-bottom: 25px;
+}
+
+.main h1{
+    font-size: 100px;
+    line-height: 1em;
+}
+
+.image{
+    position: relative;
+}
+
+.off{
+    position: absolute;
+    right: 0;
+    border: 5px solid white;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px #40200C;
+}
+
+.child{
+    filter: drop-shadow(0px 0px 10px #40200C); 
+    height: 600px;
+
+}
+
+.child:hover{
+    height: 650px;
+    filter: drop-shadow(0px 0px 20px #40200C); 
+}
+
+.essential{
+    color: rgb(204, 153, 95);
+}
+
+.drop{
+    color: black;
+    margin: 20px 0px;
+}
+
+.main button, .sale button{
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.ribbon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color:rgb(227, 224, 219);
+}
+
+.ribbon .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.product .item{
+    background-color: rgba(227, 224, 219, 0.572);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 50px;
+}
+
+.item img{
+    height: 300px;
+    width: 250px;
+}
+
+.item p{
+    color: goldenrod;
+}
+
+.item:hover, .sale1:hover, .sale2:hover{
+    /* box-shadow: 0px 0px 20px #40200C; */
+    /* box-shadow: 0px 0px 20px goldenrod; */
+    box-shadow: 0px 0px 20px rgba(135, 134, 131, 0.895);
+}
+
+.sale{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+
+.sale1 ,.sale2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(236, 233, 227);
+    padding: 0px 20px;
+    width: 650px;
+    border-radius: 25px;
+}
+
+.sale1 h3 ,.sale2 h3, .shop h3{
+    font-size: 50px;
+    font-family: Aldhabi;
+    padding: 15px 0px;
+    line-height: 0.7em;
+    letter-spacing: 0.01em;
+    color: #40200C;
+}
+
+.shop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+}
+
+.shop input[type="email"]{
+    padding: 10px;
+    width: 300px;
+}
+
+.shop p{
+    padding-bottom: 10px;
+}
+
+.shop button{
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: -4px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    background-color: antiquewhite;
+    font-size: 16px;
+}
