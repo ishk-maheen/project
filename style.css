@@ -50,7 +50,7 @@ nav{
     background-color: red;
     color: white;
     font-size: 10px;
-    padding: 2px 4px;
+    padding: 2px 5px;
     border-radius: 100px;
     position: absolute;
     right: 0px;
@@ -61,7 +61,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px 0px;
+    padding: 30px 10px 20px 10px;
 }
 
 .new{
@@ -123,6 +123,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
     background-color:rgb(227, 224, 219);
 }
@@ -144,7 +145,7 @@ nav{
 .product .item{
     background-color: rgba(227, 224, 219, 0.572);
     border-radius: 25px;
-    padding: 10px;
+    padding: 10px 20px 20px 20px;
     margin: 50px;
 }
 
@@ -180,6 +181,7 @@ nav{
     padding: 0px 20px;
     width: 650px;
     border-radius: 25px;
+    margin: 20px;
 }
 
 .sale1 h3 ,.sale2 h3, .shop h3{
@@ -193,12 +195,16 @@ nav{
 
 .shop{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin: 50px;
     border-radius: 25px;
     background-color: antiquewhite;
+}
+
+.shop img{
+    border-radius: 25px 0px 0px 25px;
 }
 
 .shop input[type="email"]{
@@ -208,6 +214,7 @@ nav{
 
 .shop p{
     padding-bottom: 10px;
+    overflow-wrap: break-word;
 }
 
 .shop button{
@@ -226,4 +233,78 @@ footer{
     padding: 25px;
     background-color: antiquewhite;
     font-size: 16px;
+}
+
+@media only screen and (max-width:1085px){
+    .main h1{
+        font-size: 80px;
+    }
+    .main .child{
+        height: 500px;
+    }
+    .main .off{
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:983px){
+    .shop img{
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:919px){
+    .shop img{
+        height: 200px;
+    }
+    .shop input[type="email"]{
+        padding: 10px;
+        width: 200px;
+    }
+    .shop p{
+        width: 350px;
+    }
+    .main h1{
+        font-size: 60px;
+    }
+    .main h2{
+        font-size: 22px;
+    }
+    .main button, .sale button{
+    padding: 8px 15px;
+    font-size: 15px;
+    }
+    .main .child{
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    nav img{
+        height: 80px;
+    }
+    .nav-links a{
+        font-size: 16px;
+    }
+    .nav-icons svg{
+        height: 25px;
+    }
+    .cart span{
+        font-size: 9px;
+        padding: 1px 4px;
+    }
+    .item img{
+        height: 280px;
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width:747px){
+    .shop{
+        justify-content: center;
+        text-align: center;
+    }
+    .shop img{
+        border-radius: 0px;
+    }
 }
